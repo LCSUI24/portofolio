@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Workflows | Cyrillo Praditya Soeharto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 8rem 0 3rem;
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .page-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+        #projects {
+            background: var(--bg-color);
+            padding-top: 3rem;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--primary-dark);
+        }
+        .back-link::before {
+            content: '←';
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Cyrillo.</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Tentang</a></li>
+                <li><a href="index.html#projects">Proyek</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">n8n Workflows</h1>
+            <p class="page-subtitle">Koleksi workflow automation yang saya buat menggunakan n8n</p>
+        </div>
+    </section>
+
+    <!-- All Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <a href="projects.html" class="back-link">Kembali ke Semua Proyek</a>
+            <div class="projects-grid">
+                <!-- Workflow 1 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/n8n-Chatbot-Venue.png" alt="Venyuk Chatbot" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Venyuk Chatbot</h3>
+                        <p class="project-description">AI chatbot for Venyuk sport venue reservation system using n8n.</p>
+                        <div class="project-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Chatbot</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Workflow 2 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/n8n-SCeLE-Calendar.png" alt="SCeLE Calendar" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SCeLE Calendar reminder</h3>
+                        <p class="project-description">Automated calendar sync workflow for SCeLe (University of Indonesia e-learning platform) schedule to Whatsapp</p>
+                        <div class="project-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Whatsapp</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Workflow 3 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/n8n.png" alt="Workflow 3" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Soon</h3>
+                        <p class="project-description">Soon</p>
+                        <div class="project-tags">
+                            <span class="tag">n8n</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">View Workflow</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-name">Cyrillo Praditya Soeharto</span>
+                <span class="footer-text">All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/[username]" target="_blank">LinkedIn</a>
+                <a href="https://github.com/[username]" target="_blank">GitHub</a>
+                <a href="mailto:[email@anda.com]">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

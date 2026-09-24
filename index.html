@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Cyrillo Praditya Soeharto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Ello</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-label">Welcome to My Portfolio</span>
+                <h1 class="hero-name">Cyrillo Praditya Soeharto</h1>
+                <p class="hero-role">undergraduate computer science student at the University of Indonesia</p>
+                <p class="hero-description">A Computer Science student at Universitas Indonesia with a deep passion for the intersection of IT and the creative fields.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">See Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, I'm Cyrillo Praditya Soeharto but you can just call me Ello. I have a strong passion for both the technology and creative worlds.</p>
+                    <p>I am currently studying Computer Science at Universitas Indonesia. Beyond the classroom, I've actively built my practical experience through various student organizations, event committees, and internships.</p>
+                    <p>Right now, I'm enjoying exploring the vast and dynamic landscape of IT. I love diving into new challenges and discovering exciting opportunities that help me continuously grow my skills and expand my knowledge.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Years of Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects done</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Organizations & Internship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/profile.png" alt="Cyrillo Praditya Soeharto" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Here are some of the projects I have worked on</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/Proxmox.png" alt="Private Server" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Private Server</h3>
+                        <p class="project-description">Hosting my own private server for personal and educational purposes using Proxmox.</p>
+                        <div class="project-tags">
+                            <span class="tag">Virtualization</span>
+                            <span class="tag">Self-hosted</span>
+                            <span class="tag">Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/proxmox" class="project-link" target="_blank">Proxmox GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/n8n.png" alt="n8n" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">n8n</h3>
+                        <p class="project-description">Self hosted n8n in my private server.</p>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">Self-hosted</span>
+                            <span class="tag">n8n</span>
+
+                        </div>
+                        <div class="project-links">
+                            <a href="n8n_workflows.html" class="project-link" target="_blank">Workflows</a>
+                            <a href="https://github.com/n8n-io/n8n" class="project-link" target="_blank">n8n GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/Venyuk.png" alt="Venyuk" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Venyuk</h3>
+                        <p class="project-description">A web application for sport venue reservation</p>
+                        <div class="project-tags">
+                            <span class="tag">Mobile Development</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/PBP-B05/venyuk" class="project-link" target="_blank">Venyuk GitHub</a>
+                            <a href="https://github.com/PBP-B05/venyuk-mobile" class="project-link" target="_blank">Venyuk Mobile GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 (tambah sendiri) -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="image-placeholder">Proyek 4</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">[Nama Proyek 4]</h3>
+                        <p class="project-description">[Deskripsi singkat]</p>
+                        <div class="project-tags">
+                            <span class="tag">[Tech]</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">Demo</a>
+                            <a href="#" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 (tambah sendiri) -->
+                <article class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="image-placeholder">Proyek 5</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">[Nama Proyek 5]</h3>
+                        <p class="project-description">[Deskripsi singkat]</p>
+                        <div class="project-tags">
+                            <span class="tag">[Tech]</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">Demo</a>
+                            <a href="#" class="project-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="projects-cta">
+                <a href="projects.html" class="btn btn-secondary">Lihat Semua Proyek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's create something great together! Feel free to reach out if you have any questions or collaboration ideas.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-col">
+                    <a href="mailto:elloganteng14@gmail.com" class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>elloganteng14@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cyrillo-praditya-soeharto-b67605324/" class="contact-item" target="_blank">
+                        <span class="contact-icon">in</span>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <p>@Cyrillo Praditya Soeharto</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/crylllo" class="contact-item" target="_blank">
+                        <span class="contact-icon">GH</span>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <p>@crylllo</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-col">
+                    <a href="https://www.instagram.com/crylllo/" class="contact-item" target="_blank">
+                        <span class="contact-icon">IG</span>
+                        <div class="contact-text">
+                            <h4>Instagram</h4>
+                            <p>@crylllo</p>
+                        </div>
+                    </a>
+                    <a href="https://www.credly.com/users/cyrillo-soeharto" class="contact-item" target="_blank">
+                        <span class="contact-icon">CW</span>
+                        <div class="contact-text">
+                            <h4>Credly</h4>
+                            <p>@Cyrillo Praditya Soeharto</p>
+                        </div>
+                    </a>
+                    <a href="https://discord.com/users/similikiti4171" class="contact-item">
+                        <span class="contact-icon">DC</span>
+                        <div class="contact-text">
+                            <h4>Discord</h4>
+                            <p>@similikiti4171</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-col">
+                    <div class="support-card">
+                        <div class="support-header">
+                            <span class="support-icon">☕</span>
+                            <h4>Support My Work</h4>
+                        </div>
+                        <p class="support-text">If you enjoy my work, consider buying me a coffee!</p>
+                        <a href="https://ko-fi.com/crylllo" class="btn btn-primary" target="_blank">Buy Me a Coffee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-name">Cyrillo Praditya Soeharto</span>
+                <span class="footer-text">All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/cyrillo-praditya-soeharto-b67605324/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/crylllo" target="_blank">GitHub</a>
+                <a href="mailto:elloganteng14@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
