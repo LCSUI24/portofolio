@@ -1,257 +1,148 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semua Proyek | Cyrillo Praditya Soeharto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore Cyrillo Praditya Soeharto's applications, automation, design work, and home lab.">
+    <meta name="theme-color" content="#f6f7ef">
+    <title>Projects — Cyrillo Praditya Soeharto</title>
+    <link rel="icon" href="assets/ello.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/big-shoulders-display.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .page-header {
-            padding: 8rem 0 3rem;
-            background: var(--bg-secondary);
-            text-align: center;
-        }
-        .page-title {
-            font-family: var(--font-heading);
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .page-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-        #projects {
-            background: var(--bg-color);
-            padding-top: 3rem;
-        }
-        .projects-grid .project-card:nth-child(n+4) {
-            display: block !important;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--primary-color);
-            font-weight: 500;
-            margin-bottom: 2rem;
-            transition: var(--transition);
-        }
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-        .back-link::before {
-            content: '←';
-        }
-    </style>
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Cyrillo.</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="wordmark" href="index.html" aria-label="Ello, home">ello<span>.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="projects.html" aria-current="page">Work</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <a class="header-link" href="https://github.com/crylllo" target="_blank" rel="noopener">GitHub</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <main id="main" class="archive" tabindex="-1">
         <div class="container">
-            <h1 class="page-title">Projects</h1>
-            <p class="page-subtitle">Collection of projects I have worked on</p>
-        </div>
-    </section>
+            <div class="archive-heading">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Projects</span></li>
+                    </ol>
+                </nav>
+                <h1 class="display-title">Projects</h1>
+                <p>Web and mobile apps, automation workflows, design, and self-hosted infrastructure.</p>
+            </div>
 
-    <!-- All Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <a href="index.html" class="back-link">Back to Home</a>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/Proxmox.png" alt="Private Server" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Private Server</h3>
-                        <p class="project-description">Hosting my own private server for personal and educational purposes using Proxmox.</p>
-                        <div class="project-tags">
-                            <span class="tag">Proxmox</span>
-                            <span class="tag">Virtualization</span>
-                            <span class="tag">Self-hosted</span>
+            <div class="archive-toolbar" data-project-filters hidden>
+                <div class="filter-buttons" role="group" aria-label="Filter projects">
+                    <button type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" data-filter="applications" aria-pressed="false">Applications</button>
+                    <button type="button" data-filter="automation" aria-pressed="false">Automation &amp; infrastructure</button>
+                    <button type="button" data-filter="design" aria-pressed="false">Design</button>
+                </div>
+                <p class="project-count" role="status"></p>
+            </div>
+
+            <div id="projects" class="work-grid archive-grid">
+                <article id="venyuk" class="work-card" data-category="applications">
+                    <div class="cover cover--venyuk">
+                        <div class="cover-art">
+                            <img src="assets/venyuk.webp" width="1258" height="765" alt="Venyuk's sports venue booking page shown on a laptop" decoding="async">
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/proxmox" class="project-link" target="_blank">Proxmox GitHub</a>
+                    </div>
+                    <div class="work-card-body">
+                        <p class="kicker">Web &amp; mobile development</p>
+                        <h2>Venyuk</h2>
+                        <p>A reservation app for finding and booking sports venues, with web and mobile versions.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/PBP-B05/venyuk" target="_blank" rel="noopener">Web repository</a>
+                            <a href="https://github.com/PBP-B05/venyuk-mobile" target="_blank" rel="noopener">Mobile repository</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 2 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/n8n.png" alt="n8n" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">n8n</h3>
-                        <p class="project-description">Self hosted n8n in my private server.</p>
-                        <div class="project-tags">
-                            <span class="tag">n8n</span>
-                            <span class="tag">Workflow Automation</span>
+                <article id="mysawit" class="work-card" data-category="applications">
+                    <div class="cover cover--mysawit">
+                        <div class="cover-art">
+                            <img src="assets/mysawit.webp" width="1340" height="635" alt="MySawit's plantation management sign-in screen" decoding="async">
                         </div>
-                        <div class="project-links">
-                            <a href="n8n_workflows.html" class="project-link" target="_blank">Workflows</a>
-                            <a href="https://github.com/n8n-io/n8n" class="project-link" target="_blank">n8n GitHub</a>
+                    </div>
+                    <div class="work-card-body">
+                        <p class="kicker">Web development · Microservices</p>
+                        <h2>MySawit</h2>
+                        <p>A plantation management web app built around field operations.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/LCSUI24/Documentation/blob/main/MySawit%20-%20Advprog%20A18.pdf" target="_blank" rel="noopener">Documentation</a>
+                            <a href="https://github.com/advprog-2026-A18-project" target="_blank" rel="noopener">Repositories</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/Venyuk.png" alt="Venyuk" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Venyuk</h3>
-                        <p class="project-description">A web application for sport venue reservation</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">Mobile Development</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/PBP-B05/venyuk" class="project-link" target="_blank">Venyuk GitHub</a>
-                            <a href="https://github.com/PBP-B05/venyuk-mobile" class="project-link" target="_blank">Venyuk Mobile GitHub</a>
+                <article id="n8n" class="work-card" data-category="automation">
+                    <div class="cover cover--n8n">
+                        <div class="cover-art cover-stack">
+                            <img class="stack-back" src="assets/workflow-venyuk.webp" width="1682" height="749" alt="" loading="lazy" decoding="async">
+                            <img class="stack-front" src="assets/workflow-scele.webp" width="1683" height="746" alt="An n8n workflow that sends SCeLE calendar reminders to WhatsApp" loading="lazy" decoding="async">
                         </div>
                     </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/DiscoPanel.png" alt="Minecraft Server" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Minecraft Server</h3>
-                        <p class="project-description">Self hosted minecraft server using DiscoPanel</p>
-                        <div class="project-tags">
-                            <span class="tag">Self-hosted</span>
-                            <span class="tag">Minecraft</span>
-                            <span class="tag">DiscoPanel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/nickheyer/discopanel" class="project-link" target="_blank">DiscoPanel GitHub</a>
+                    <div class="work-card-body">
+                        <p class="kicker">Workflow automation</p>
+                        <h2>n8n</h2>
+                        <p>Self-hosted automations for venue booking conversations and course schedule reminders.</p>
+                        <div class="work-links">
+                            <a href="n8n_workflows.html">Browse workflows</a>
+                            <a href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener">n8n on GitHub</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 5 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/Hermes-Agent.png" alt="Hermes Agent" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Hermes Agent</h3>
-                        <p class="project-description">Self-hosted hermes ai agent</p>
-                        <div class="project-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">Agent</span>
-                            <span class="tag">Hermes</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/nousresearch/hermes-agent" class="project-link" target="_blank">Hermes AI GitHub</a>
+                <article id="rimbun" class="work-card" data-category="design">
+                    <div class="cover cover--rimbun">
+                        <div class="cover-art">
+                            <img src="assets/rimbun.webp" width="1200" height="675" alt="Rimbun branding and product concept" loading="lazy" decoding="async">
                         </div>
                     </div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/Coolify.png" alt="Coolify" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Coolify</h3>
-                        <p class="project-description">Self-hosted PaaS for deploying applications</p>
-                        <div class="project-tags">
-                            <span class="tag">Self-hosted</span>
-                            <span class="tag">PaaS</span>
-                            <span class="tag">Deployment</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://elloello.ello.my.id" class="project-link" target="_blank">Demo</a>
-                            <a href="https://github.com/coollabsio/coolify" class="project-link" target="_blank">Coolify GitHub</a>
+                    <div class="work-card-body">
+                        <p class="kicker">UI/UX · Research · Fintech</p>
+                        <h2>Rimbun</h2>
+                        <p>A sustainable finance app concept supported by research and a Figma design.</p>
+                        <div class="work-links">
+                            <a href="https://www.figma.com/design/zQYraugLav9pZfrQIe2VYD/Rimbun?node-id=0-1&amp;t=W0f7rNFugJ9O6YPM-1" target="_blank" rel="noopener">Figma design</a>
+                            <a href="https://github.com/LCSUI24/Documentation/blob/main/Rimbun%20-%20Final%20Report.pdf" target="_blank" rel="noopener">Final report</a>
+                            <a href="https://github.com/LCSUI24/Documentation/blob/main/Rimbun.pdf" target="_blank" rel="noopener">Presentation</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 7 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/MySawit.png" alt="MySawit" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MySawit</h3>
-                        <p class="project-description">A plantation management application</p>
-                        <div class="project-tags">
-                            <span class="tag">Web Development</span>
-                            <span class="tag">Microservices</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/LCSUI24/Documentation/blob/main/MySawit%20-%20Advprog%20A18.pdf" class="project-link" target="_blank">Documentation</a>
-                            <a href="https://github.com/advprog-2026-A18-project" class="project-link" target="_blank">MySawit GitHub</a>
+                <article id="private-server" class="work-card" data-category="automation">
+                    <div class="cover cover--server">
+                        <div class="cover-art">
+                            <img src="assets/proxmox.webp" width="688" height="316" alt="Resource usage columns from the Proxmox dashboard" loading="lazy" decoding="async">
                         </div>
                     </div>
-                </article>
-
-                <!-- Project 8 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/Rimbun.png" alt="Rimbun" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Rimbun</h3>
-                        <p class="project-description">Fintech application for sustainable finance</p>
-                        <div class="project-tags">
-                            <span class="tag">UI/UX</span>
-                            <span class="tag">Research</span>
-                            <span class="tag">Fintech</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.figma.com/design/zQYraugLav9pZfrQIe2VYD/Rimbun?node-id=0-1&t=W0f7rNFugJ9O6YPM-1" class="project-link" target="_blank">Figma</a>
-                            <a href="https://github.com/LCSUI24/Documentation/blob/main/Rimbun%20-%20Final%20Report.pdf" class="project-link" target="_blank">Final Report</a>
-                            <a href="https://github.com/LCSUI24/Documentation/blob/main/Rimbun.pdf" class="project-link" target="_blank">Presentation</a>
+                    <div class="work-card-body">
+                        <p class="kicker">Self-hosting · Virtualization</p>
+                        <h2>Private Server</h2>
+                        <p>A Proxmox home lab for running personal services and experimenting with virtualization.</p>
+                        <div class="work-links">
+                            <a href="https://github.com/proxmox" target="_blank" rel="noopener">Proxmox on GitHub</a>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <span class="footer-name">Cyrillo Praditya Soeharto</span>
-                <span class="footer-text">All rights reserved.</span>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/cyrillo-praditya-soeharto-b67605324/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/crylllo" target="_blank">GitHub</a>
-                <a href="mailto:elloganteng14@gmail.com">Email</a>
-            </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© Cyrillo Praditya Soeharto</p>
+            <a href="index.html#contact">Contact</a>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

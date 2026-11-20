@@ -1,152 +1,84 @@
-<!DOCTYPE html>
-<html lang="id">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>n8n Workflows | Cyrillo Praditya Soeharto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="See the n8n workflows behind Venyuk's chatbot and SCeLE calendar reminders.">
+    <meta name="theme-color" content="#f6f7ef">
+    <title>n8n Workflows — Cyrillo Praditya Soeharto</title>
+    <link rel="icon" href="assets/ello.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/big-shoulders-display.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .page-header {
-            padding: 8rem 0 3rem;
-            background: var(--bg-secondary);
-            text-align: center;
-        }
-        .page-title {
-            font-family: var(--font-heading);
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .page-subtitle {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-        #projects {
-            background: var(--bg-color);
-            padding-top: 3rem;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--primary-color);
-            font-weight: 500;
-            margin-bottom: 2rem;
-            transition: var(--transition);
-        }
-        .back-link:hover {
-            color: var(--primary-dark);
-        }
-        .back-link::before {
-            content: '←';
-        }
-    </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Cyrillo.</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#about">Tentang</a></li>
-                <li><a href="index.html#projects">Proyek</a></li>
-                <li><a href="index.html#contact">Kontak</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="wordmark" href="index.html" aria-label="Ello, home">ello<span>.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="projects.html">Work</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <a class="header-link" href="https://github.com/crylllo" target="_blank" rel="noopener">GitHub</a>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <main id="main" class="archive" tabindex="-1">
         <div class="container">
-            <h1 class="page-title">n8n Workflows</h1>
-            <p class="page-subtitle">Koleksi workflow automation yang saya buat menggunakan n8n</p>
-        </div>
-    </section>
+            <div class="archive-heading">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html#n8n">Projects</a></li>
+                        <li><span aria-current="page">n8n workflows</span></li>
+                    </ol>
+                </nav>
+                <h1 class="display-title">n8n workflows</h1>
+                <p>Two automations running on my self-hosted n8n instance.</p>
+            </div>
 
-    <!-- All Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <a href="projects.html" class="back-link">Kembali ke Semua Proyek</a>
-            <div class="projects-grid">
-                <!-- Workflow 1 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/n8n-Chatbot-Venue.png" alt="Venyuk Chatbot" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Venyuk Chatbot</h3>
-                        <p class="project-description">AI chatbot for Venyuk sport venue reservation system using n8n.</p>
-                        <div class="project-tags">
-                            <span class="tag">n8n</span>
-                            <span class="tag">Chatbot</span>
+            <div class="work-grid archive-grid workflows-grid">
+                <article class="work-card">
+                    <div class="cover cover--workflow">
+                        <div class="cover-art">
+                            <img src="assets/workflow-venyuk.webp" width="1682" height="749" alt="The node graph for Venyuk's AI chatbot" decoding="async">
                         </div>
-                        <div class="project-links">
+                    </div>
+                    <div class="work-card-body">
+                        <p class="kicker">AI chatbot</p>
+                        <h2>Venyuk Chatbot</h2>
+                        <p>An n8n-powered chatbot for the Venyuk sports venue reservation app.</p>
+                        <div class="work-links">
+                            <a href="assets/workflow-venyuk.webp" aria-label="View Venyuk Chatbot workflow screenshot">View screenshot</a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Workflow 2 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/n8n-SCeLE-Calendar.png" alt="SCeLE Calendar" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SCeLE Calendar reminder</h3>
-                        <p class="project-description">Automated calendar sync workflow for SCeLe (University of Indonesia e-learning platform) schedule to Whatsapp</p>
-                        <div class="project-tags">
-                            <span class="tag">n8n</span>
-                            <span class="tag">Automation</span>
-                            <span class="tag">Whatsapp</span>
-                        </div>
-                        <div class="project-links">
+                <article class="work-card">
+                    <div class="cover cover--workflow">
+                        <div class="cover-art">
+                            <img src="assets/workflow-scele.webp" width="1683" height="746" alt="An n8n graph with steps for taking the SCeLE calendar and sending a WhatsApp reminder" decoding="async">
                         </div>
                     </div>
-                </article>
-
-                <!-- Workflow 3 -->
-                <article class="project-card fade-in">
-                    <div class="project-image">
-                        <img src="assets/n8n.png" alt="Workflow 3" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Soon</h3>
-                        <p class="project-description">Soon</p>
-                        <div class="project-tags">
-                            <span class="tag">n8n</span>
-                            <span class="tag">Automation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" target="_blank">View Workflow</a>
+                    <div class="work-card-body">
+                        <p class="kicker">Calendar automation</p>
+                        <h2>SCeLE Calendar Reminder</h2>
+                        <p>Reads the schedule from Universitas Indonesia’s learning platform and sends reminders on WhatsApp.</p>
+                        <div class="work-links">
+                            <a href="assets/workflow-scele.webp" aria-label="View SCeLE Calendar Reminder workflow screenshot">View screenshot</a>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-left">
-                <span class="footer-name">Cyrillo Praditya Soeharto</span>
-                <span class="footer-text">All rights reserved.</span>
-            </div>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/[username]" target="_blank">LinkedIn</a>
-                <a href="https://github.com/[username]" target="_blank">GitHub</a>
-                <a href="mailto:[email@anda.com]">Email</a>
-            </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© Cyrillo Praditya Soeharto</p>
+            <a href="index.html#contact">Contact</a>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
