@@ -1,0 +1,43 @@
+diff --git a/index.html b/index.html
+index 2c60926..7f6ed79 100644
+--- a/index.html
++++ b/index.html
+@@ -8,8 +8,8 @@
+     <title>Cyrillo Praditya Soeharto — Portfolio</title>
+     <link rel="icon" href="assets/ello.svg" type="image/svg+xml">
+     <link rel="preload" href="assets/big-shoulders-display.woff" as="font" type="font/woff" crossorigin>
+-    <link rel="stylesheet" href="style.css">
+-    <script src="script.js" defer></script>
++    <link rel="stylesheet" href="style.css?v=674056c3">
++    <script src="script.js?v=a10e63da" defer></script>
+ </head>
+ <body id="top">
+     <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/n8n_workflows.html b/n8n_workflows.html
+index be71fc6..de0b112 100644
+--- a/n8n_workflows.html
++++ b/n8n_workflows.html
+@@ -8,7 +8,7 @@
+     <title>n8n Workflows — Cyrillo Praditya Soeharto</title>
+     <link rel="icon" href="assets/ello.svg" type="image/svg+xml">
+     <link rel="preload" href="assets/big-shoulders-display.woff" as="font" type="font/woff" crossorigin>
+-    <link rel="stylesheet" href="style.css">
++    <link rel="stylesheet" href="style.css?v=674056c3">
+ </head>
+ <body id="top">
+     <a class="skip-link" href="#main">Skip to content</a>
+diff --git a/projects.html b/projects.html
+index 7f508dd..635c69d 100644
+--- a/projects.html
++++ b/projects.html
+@@ -8,8 +8,8 @@
+     <title>Projects — Cyrillo Praditya Soeharto</title>
+     <link rel="icon" href="assets/ello.svg" type="image/svg+xml">
+     <link rel="preload" href="assets/big-shoulders-display.woff" as="font" type="font/woff" crossorigin>
+-    <link rel="stylesheet" href="style.css">
+-    <script src="script.js" defer></script>
++    <link rel="stylesheet" href="style.css?v=674056c3">
++    <script src="script.js?v=a10e63da" defer></script>
+ </head>
+ <body id="top">
+     <a class="skip-link" href="#main">Skip to content</a>
